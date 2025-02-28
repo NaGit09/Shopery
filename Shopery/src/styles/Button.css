@@ -1,0 +1,25 @@
+
+.btnBorder {
+    background-color: #fff;
+    border: 2px solid var(--success);
+    color: var(--success);
+}
+.btnBorder:hover {
+    border: 2px solid var(--successDark);
+    color: var(--successDark);
+}
+.btnFill {
+    background-color: var(--success);
+}
+.btnFill:hover {
+    background-color: var(--successDark);
+}
+.btnGhost{
+    background-color: rgba(86, 172, 89, 0.1);
+    color: var(--success);
+}
+.btnGhost:hover {
+    background-color: rgba(44, 116, 46, 0.199);
+    color: var(--successDark);
+    border: no;
+}

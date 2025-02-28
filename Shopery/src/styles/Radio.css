@@ -1,0 +1,40 @@
+.custom-Radiobox input {
+display: none;
+}
+.custom-Radiobox {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .RadioMark {
+    width: 20px;
+    height: 20px;
+    background-color: white; /* Nền trắng */
+    border: 2px solid #ccc; /* Viền xám */
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  .custom-Radiobox:hover .RadioMark {
+    border-color: var(--success);
+  }
+  .custom-Radiobox input:checked + .RadioMark {
+    background-color:#fff; /* Màu xanh khi chọn */
+    border-color :var(--success);
+  }
+  .custom-Radiobox input:checked + .RadioMark::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: var(--success);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease;
+  }

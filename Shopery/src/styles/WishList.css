@@ -1,0 +1,20 @@
+:root {
+  --success: #00b207;
+  --successDark: #2c742f;
+}
+.WishList {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.WishList:hover {
+  background-color: var(--success);
+  color: #fff;
+}
+.WishList-active {
+  background-color: #fff;
+  color: var(--success);
+}

@@ -1,0 +1,51 @@
+/* Ẩn checkbox mặc định */
+.custom-checkbox input {
+    display: none;
+  }
+  
+  /* Tạo checkbox tùy chỉnh */
+  .custom-checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /* Hình dạng checkbox */
+  .checkmark {
+    width: 20px;
+    height: 20px;
+    background-color: white; /* Nền trắng */
+    border: 2px solid #ccc; /* Viền xám */
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  /* Khi hover vào checkbox */
+  .custom-checkbox:hover .checkmark {
+    border-color: var(--success);
+  }
+  
+  /* Khi checkbox được chọn */
+  .custom-checkbox input:checked + .checkmark {
+    background-color: var(--success); /* Màu xanh khi chọn */
+    border :var(--success);
+  }
+  
+  /* Thêm dấu check */
+  .custom-checkbox input:checked + .checkmark::after {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
