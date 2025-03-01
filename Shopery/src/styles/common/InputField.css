@@ -1,0 +1,55 @@
+.input-container {
+  position: relative;
+  display: flex;
+}
+
+input {
+  outline: none;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  padding-left: 1em;
+  box-sizing: border-box;
+  height: 49px;
+  width: 428px;
+  border: 1px solid;
+  color: #1A1A1A;
+}
+
+.normal {
+  border-color: #1A1A1A;
+}
+
+.normal:focus {
+  border-color: var(--primary);
+}
+
+.warning {
+  border-color: var(--warning);
+}
+
+.danger {
+  border-color: var(--danger);
+}
+
+.success {
+  border-color: var(--primary);
+}
+
+.filled {
+  border-color: #E6E6E6;
+}
+
+/* Thêm icon cảnh báo */
+.input-container .icon{
+  position: absolute;
+  right: 1em;
+  font-size: 1.3em;
+  /* di chuyển ra giữa */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-label {
+  display: block;  /* Để label xuống dòng */
+  text-align: left; /* Căn trái */
+}
