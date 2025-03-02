@@ -11,6 +11,7 @@ import CloseButton from "./components/CloseButton";
 import Socical from "./components/Socical";
 import Price from "./components/Price";
 import InputField from "./components/common/InputField";
+import Tag from "./components/common/Tag";
 function App() {
   return (
     <>
@@ -27,7 +28,12 @@ function App() {
         <Socical brand={"instagram"} />
         <Price price={14.99} sale={29.99} type={"big"} />
 
-        <InputField variant={"normal"} type={"text"} placeholder={`Normal`}/>
+        <InputField
+          style={{ marginBottom: "30px" }}
+          variant={"normal"}
+          type={"text"}
+          placeholder={`Normal`}
+        />
         <InputField
           variant={"warning"}
           type={"text"}
@@ -52,6 +58,16 @@ function App() {
           placeholder={`Filled`}
           subText={"This is a Filled text"}
         />
+        {/**
+         *  thẻ chứa tag cần có position relative
+         * */}
+        <div style={{position: "relative", outline: "1px solid #1A1A1A"}}>
+          <img src="/apple.jpg" />
+          <Tag value={"Sale 50%"} variant={"default"} position="top-right"/>
+          <Tag value={"New product"} variant={"new"} position="top-left"/>
+          <Tag value={"5000$"} variant={"bestsale"} position="bottom-right"/>
+          <Tag value={"Out of stock"} variant={"outofstock"} position="bottom-left"/>
+        </div>
       </div>
     </>
   );
