@@ -73,3 +73,30 @@ button:focus-visible {
   justify-content: center;
   align-items: center;
 }
+
+.AddToCart {
+  background-color: #F2F2F2;
+  color: #1a1a1a;
+  font-size: 14px;
+  width: 70%;
+  transition: 2s border;
+}
+.AddToCart:hover {
+  background-color: var(--success);
+  color: #fff;
+}
+.BigProduct:hover  {
+
+  border: 2px solid var(--success);
+
+}
+.BigProduct:hover .AddToCart {
+  background-color: var(--success);
+  color: white;
+}
+.feedBack {
+  color: #FF8A00;
+}
+.feedBackNumber {
+  color: #808080;
+}

@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/Socical.css"
 import {
   TwitterOutlined,
   FacebookOutlined,
@@ -7,6 +6,7 @@ import {
   MailOutlined,
   LinkOutlined,
 } from "@ant-design/icons";
+import styled from "styled-components";
 function getIcon(type) {
   switch (type) {
     case "twitter":
@@ -23,13 +23,23 @@ function getIcon(type) {
       break;
   }
 }
+const SocicalButton = styled.button`
+  background-color: transparent;
+  color: black;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  &:hover {
+    color: white;
+    background-color: var(--success);
+  }
+`;
 const Socical = ({ brand }) => {
   return (
-    <button
-      className="Socical absolute_center"
-    >
+    <SocicalButton className="Socical absolute_center">
       {getIcon(brand)}
-    </button>
+    </SocicalButton>
   );
 };
 
