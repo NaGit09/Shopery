@@ -1,14 +1,12 @@
-import React from "react";
+import React from 'react'
 import "../../styles/common/Tag.css";
 
-const Tag = ({ value, variant, style, position = "top-left" }) => {
+const Tag = ({ value }) => {
   return (
-    <>
-      <div className={`${variant} tagContainer ${position}`} style={style}>
-          {value}
-      </div>
-    </>
-  );
-};
+    <div className="hoverTag" >
+        {value}
+    </div>
+  )
+}
 
-export default Tag;
+export default Tag

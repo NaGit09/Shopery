@@ -1,44 +1,15 @@
-.tagContainer {
-    border-radius: 4px;
+.hoverTag {
+    color: #1A1A1A;
+    align-content: center;
+    justify-content: center;
+    border-radius: 45px;
+    width: 86px;
+    height: 33px;
+    font-size: 13px;
+}
+
+.hoverTag:hover {
+    background-color: var(--primary);
     color: #FFFFFF;
-    position: absolute;
-    font-weight: bold;
-    padding: 5px 10px;
 }
 
-.default {
-    background-color: #EA4B48;
-}
-
-.new {
-    background-color: #FF8A00;
-}
-
-.bestsale {
-    background-color: #2388FF;
-}
-
-.outofstock {
-    background-color: #1A1A1A;
-}
-
-.top-left {
-    top: 10px;
-    left: 10px;
-}
-
-
-.top-right {
-    top: 10px;
-    right: 10px;
-}
-
-.bottom-left {
-    bottom: 10px;
-    left: 10px;
-}
-
-.bottom-right {
-    bottom: 10px;
-    right: 10px;
-}

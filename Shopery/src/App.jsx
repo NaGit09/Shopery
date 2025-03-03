@@ -11,7 +11,11 @@ import CloseButton from "./components/CloseButton";
 import Socical from "./components/Socical";
 import Price from "./components/Price";
 import InputField from "./components/common/InputField";
-import Tag from "./components/common/Tag";
+import ProductTag from "./components/common/ProductTag";
+import Tag from "./components/common/tag";
+import ProgressTracker from "./components/common/ProgressTracker";
+import { FaCheck } from "react-icons/fa6";
+
 function App() {
   return (
     <>
@@ -61,12 +65,35 @@ function App() {
         {/**
          *  thẻ chứa tag cần có position relative
          * */}
-        <div style={{position: "relative", outline: "1px solid #1A1A1A"}}>
+        <div style={{ position: "relative", outline: "1px solid #1A1A1A" }}>
           <img src="/apple.jpg" />
-          <Tag value={"Sale 50%"} variant={"default"} position="top-right"/>
-          <Tag value={"New product"} variant={"new"} position="top-left"/>
-          <Tag value={"5000$"} variant={"bestsale"} position="bottom-right"/>
-          <Tag value={"Out of stock"} variant={"outofstock"} position="bottom-left"/>
+          <ProductTag
+            value={"Sale 50%"}
+            variant={"default"}
+            position="top-right"
+          />
+          <ProductTag
+            value={"New product"}
+            variant={"new"}
+            position="top-left"
+          />
+          <ProductTag
+            value={"5000$"}
+            variant={"bestsale"}
+            position="bottom-right"
+          />
+          <ProductTag
+            value={"Out of stock"}
+            variant={"outofstock"}
+            position="bottom-left"
+          />
+        </div>
+        <Tag value={"Healthy"} />
+        <div style={{display: "flex", gap: "10px"}}>
+          <ProgressTracker varient={"filled"} value={"02"} />
+          <ProgressTracker varient={"outline"} value={"02"} />
+          <ProgressTracker varient={"filled"} icon={<FaCheck size={20} />} />
+          <ProgressTracker varient={"outline"} icon={<FaCheck size={20} />} />
         </div>
       </div>
     </>
