@@ -3,7 +3,7 @@
   display: flex;
 }
 
-input {
+.input-container input {
   outline: none;
   background-color: #FFFFFF;
   border-radius: 6px;
@@ -15,27 +15,27 @@ input {
   color: #1A1A1A;
 }
 
-.normal {
+.input-container .normal {
   border-color: #1A1A1A;
 }
 
-.normal:focus {
+.input-container .normal:focus {
   border-color: var(--primary);
 }
 
-.warning {
+.input-container .warning {
   border-color: var(--warning);
 }
 
-.danger {
+.input-container .danger {
   border-color: var(--danger);
 }
 
-.success {
+.input-container .success {
   border-color: var(--primary);
 }
 
-.filled {
+.input-container .filled {
   border-color: #E6E6E6;
 }
 

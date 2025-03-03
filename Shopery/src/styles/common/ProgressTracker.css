@@ -1,0 +1,20 @@
+.progressContainer {
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    align-content: center;
+    width: 40px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.progressContainer.filled {
+    background-color: var(--primary);
+    color: #FFFFFF;
+}
+
+
+.progressContainer.outline {
+    background-color: #FFFFFF;
+    color: var(--primary);
+    outline: 2px dashed var(--primary);
+}
