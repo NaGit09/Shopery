@@ -1,5 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+<<<<<<< HEAD
 import WishList from "./components/WishList";
 import Cart from "./components/Cart";
 import Button from "./components/Button";
@@ -16,10 +17,14 @@ import Tag from "./components/common/tag";
 import ProgressTracker from "./components/common/ProgressTracker";
 import { FaCheck } from "react-icons/fa6";
 
+=======
+import BigProduct from "./components/BigProduct";
+>>>>>>> c963d1d (update : add new component & optimize)
 function App() {
   return (
     <>
       <div className="container">
+<<<<<<< HEAD
         <h1 className="text-center text-success">Hello world</h1>
         <Cart />
         <WishList />
@@ -95,6 +100,9 @@ function App() {
           <ProgressTracker varient={"filled"} icon={<FaCheck size={20} />} />
           <ProgressTracker varient={"outline"} icon={<FaCheck size={20} />} />
         </div>
+=======
+        <BigProduct/>
+>>>>>>> c963d1d (update : add new component & optimize)
       </div>
     </>
   );

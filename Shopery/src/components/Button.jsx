@@ -7,10 +7,10 @@ function getSize (type) {
       case "large" : return {width :141 , height : 51}
   }
 }
-const Button = ({ variant, content, size }) => {
+const Button = ({ variant, content , style}) => {
   return (
     <button
-      style={getSize(size)}
+      style={style}
       className={`${variant} absolute_center rounded-pill`}
     >
       {content}
