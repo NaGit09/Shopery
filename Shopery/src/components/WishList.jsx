@@ -13,21 +13,13 @@ const WishListButton = styled(({ isActive, ...rest }) => <button {...rest} />)`
     color: #fff;
   }
 `;
-<<<<<<< HEAD
-const WishList = () => {
-=======
 const WishList = ({shadow="none-shadow"}) => {
->>>>>>> a00f229 (feature : update component)
   const [isFill, setIsFill] = useState(false);
   return (
     <WishListButton
       isActive={isFill}
       onClick={() => setIsFill(!isFill)}
-<<<<<<< HEAD
-      className={` shadow absolute_center rounded-circle`}
-=======
       className={`${shadow} border absolute_center rounded-circle`}
->>>>>>> a00f229 (feature : update component)
     >
       {isFill ? <HeartFilled /> : <HeartOutlined />}
     </WishListButton>

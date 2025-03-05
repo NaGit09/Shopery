@@ -13,18 +13,12 @@ const ViewButton = styled.button`
   }
 `;
 
-<<<<<<< HEAD
-const View = () => {
-  return (
-    <ViewButton className="View absolute_center shadow rounded-circle">
-=======
 const View = ({ shadow = "none-shadow" }) => {
   return (
     <ViewButton
       className={`View absolute_center border
       rounded-circle ${shadow}`}
     >
->>>>>>> a00f229 (feature : update component)
       <EyeFilled />
     </ViewButton>
   );
