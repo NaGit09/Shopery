@@ -16,10 +16,6 @@
     "bootstrap": "^5.3.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-<<<<<<< HEAD
-    "react-icons": "^5.5.0",
-=======
->>>>>>> a00f229 (feature : update component)
     "styled-components": "^6.1.15"
   },
   "devDependencies": {

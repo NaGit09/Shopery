@@ -1,8 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
-=======
 import styled from "styled-components";
->>>>>>> a00f229 (feature : update component)
 import {
   TwitterOutlined,
   FacebookOutlined,
@@ -10,10 +7,6 @@ import {
   MailOutlined,
   LinkOutlined,
 } from "@ant-design/icons";
-<<<<<<< HEAD
-import styled from "styled-components";
-=======
->>>>>>> a00f229 (feature : update component)
 function getIcon(type) {
   switch (type) {
     case "twitter":
@@ -32,11 +25,7 @@ function getIcon(type) {
 }
 const SocicalButton = styled.button`
   background-color: transparent;
-<<<<<<< HEAD
-  color: black;
-=======
   color: white;
->>>>>>> a00f229 (feature : update component)
   font-size: 18px;
   width: 40px;
   height: 40px;
