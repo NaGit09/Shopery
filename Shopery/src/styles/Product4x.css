@@ -1,0 +1,9 @@
+.Product4X:hover > .option {
+    display: block;
+}
+.Product4X:hover {
+    border: 2px solid var(--success);
+}
+.option {
+    display: none;
+}

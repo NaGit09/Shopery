@@ -1,6 +1,10 @@
 /* Ẩn checkbox mặc định */
 .custom-checkbox input {
     display: none;
+<<<<<<< HEAD
+=======
+    background-color: rgba(0, 0, 0, 0.141);
+>>>>>>> a00f229 (feature : update component)
   }
   
   /* Tạo checkbox tùy chỉnh */

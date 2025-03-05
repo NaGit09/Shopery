@@ -2,6 +2,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+<<<<<<< HEAD
   
   --success : #00B207;
   --successDark : #2C742F;
@@ -15,6 +16,13 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
+=======
+  --success: #00b207;
+  --successDark: #2c742f;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+>>>>>>> a00f229 (feature : update component)
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -82,7 +90,11 @@ button:focus-visible {
 }
 
 .AddToCart {
+<<<<<<< HEAD
   background-color: #F2F2F2;
+=======
+  background-color: #f2f2f2;
+>>>>>>> a00f229 (feature : update component)
   color: #1a1a1a;
   font-size: 14px;
   width: 70%;
@@ -92,18 +104,56 @@ button:focus-visible {
   background-color: var(--success);
   color: #fff;
 }
+<<<<<<< HEAD
 .BigProduct:hover  {
 
   border: 2px solid var(--success);
 
+=======
+.BigProduct:hover {
+  border: 2px solid var(--success);
+>>>>>>> a00f229 (feature : update component)
 }
 .BigProduct:hover .AddToCart {
   background-color: var(--success);
   color: white;
 }
 .feedBack {
+<<<<<<< HEAD
   color: #FF8A00;
 }
 .feedBackNumber {
   color: #808080;
+=======
+  color: #ff8a00;
+}
+.feedBackNumber {
+  color: #808080;
+}
+.Link {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 312px;
+  height: 368px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.TeamCard:hover > .Link {
+  display: flex;
+}
+.Product:hover {
+  border: 2px solid var(--success);
+}
+.Product:hover .Product_hover {
+display: flex;
+gap: 10px;
+
+}
+.Product_hover {
+  display: none;
+}
+.Product:hover .Product_default {
+display: none;
+>>>>>>> a00f229 (feature : update component)
 }
