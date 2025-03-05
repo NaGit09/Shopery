@@ -1,6 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import WishList from "./components/WishList";
 import Cart from "./components/Cart";
 import Button from "./components/Button";
@@ -20,10 +21,14 @@ import { FaCheck } from "react-icons/fa6";
 =======
 import BigProduct from "./components/BigProduct";
 >>>>>>> c963d1d (update : add new component & optimize)
+=======
+import BigProduct from "./components/BigProduct";
+>>>>>>> c963d1db9169b3dbc1e67f3b52622dc714f0b097
 function App() {
   return (
     <>
       <div className="container">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <h1 className="text-center text-success">Hello world</h1>
         <Cart />
@@ -103,6 +108,9 @@ function App() {
 =======
         <BigProduct/>
 >>>>>>> c963d1d (update : add new component & optimize)
+=======
+        <BigProduct/>
+>>>>>>> c963d1db9169b3dbc1e67f3b52622dc714f0b097
       </div>
     </>
   );
